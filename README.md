@@ -1,4 +1,4 @@
-# android--one-time-alert-dialog
+# OneTimeAlertDialog (extends AlertDialog)
 Android AlertDialog that only shows once for a given string.
 
 This is a subclass of `AlertDialog` with all its features supported. The only difference is that a key is provided in its initialization, which is used to check the default SharedPreferences and save itself once shown.
@@ -14,6 +14,7 @@ This is a subclass of `AlertDialog` with all its features supported. The only di
 
 
 ## Usage
+First, copy `OneTimeAlertDialog.java` to your project. Then, do something similar to the following.
 
 ### Simple case
 
