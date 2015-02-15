@@ -59,3 +59,31 @@ First, copy `OneTimeAlertDialog.java` to your project. Then, do something simila
 These two (small) limitations were allowed as a tradeoff to keep the code vastly simplified, smaller, and more future-proof. These two issues are from extending `AlertDialog.Builder` for `OneTimeAlertDialog.Builder`. So, calling `create()` creates a regular AlertDialog instead of a OneTimeAlertDialog. And, show() calls create() internally, so it would only return a regular AlertDialog also. So, it was chosen to always return null, especially since I've never reused the AlertDialog for the one-time prompts. One way around these limitations is to recreate the entire AlertDialog.Builder (basically a large copy+paste), but I didn't find that worth the tradeoffs.
 
 Having said that, if you know a simple way to hide these limitations from the public API, then I'd be happy to learn and fix it!
+
+
+
+## License
+
+	/**
+	 * The MIT License (MIT)
+	 *
+	 * Copyright (c) 2015 Danial Goodwin
+	 *
+	 * Permission is hereby granted, free of charge, to any person obtaining a copy
+	 * of this software and associated documentation files (the "Software"), to deal
+	 * in the Software without restriction, including without limitation the rights
+	 * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	 * copies of the Software, and to permit persons to whom the Software is
+	 * furnished to do so, subject to the following conditions:
+	 *
+	 * The above copyright notice and this permission notice shall be included in all
+	 * copies or substantial portions of the Software.
+	 *
+	 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	 * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	 * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	 * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+	 * SOFTWARE.
+	 */
